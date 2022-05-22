@@ -8,6 +8,7 @@ type JournalEntry {
   _id: ID
   journalText: String
   createdAt: String
+  username: String
 }
 
   type Query {
