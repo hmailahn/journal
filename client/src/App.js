@@ -9,11 +9,11 @@ import Footer from './components/Footer';
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-// import Profile from './pages/Profile';
+import Home from './pages/Home';
 
 
 const httpLink = createHttpLink({
-  uri: 'http://localhost:3001/graphql',
+  uri: '/graphql',
 });
 
 const client = new ApolloClient({
@@ -27,6 +27,7 @@ function App() {
     <div className='flex-column justify-flex-start min-100-vh'>
       <Header />
       <div className='container'>
+        <Home />
       </div>
       <Footer />
     </div>
