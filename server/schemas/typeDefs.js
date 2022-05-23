@@ -25,6 +25,12 @@ type User {
     journalEntries(username: String): [JournalEntry]
     journalEntry(_id: ID!): JournalEntry
   }
+
+  type Mutation {
+    login(email: String!, password: String!): User
+    addUser(username: String!, email: String!, password: String!): User
+  }
+
 `;
 
 // export the typeDefs
@@ -40,11 +46,4 @@ module.exports = typeDefs;
    
 //   }
 
-// # get a single user by username (use a username from your database)
-// user(username: "<username-goes-here>") {
-//   username
-//   email
-//   journalEntries {
-//     journalText
-//   }
-// }
+
