@@ -11,6 +11,10 @@ type JournalEntry {
   username: String
 }
 
+type Auth {
+  token: ID!
+  user: User
+}
 
 type User {
   _id: ID
@@ -20,6 +24,7 @@ type User {
 }
 
   type Query {
+    me: User
     users: [User]
     user(username: String!): User
     journalEntries(username: String): [JournalEntry]
@@ -27,23 +32,13 @@ type User {
   }
 
   type Mutation {
-    login(email: String!, password: String!): User
-    addUser(username: String!, email: String!, password: String!): User
+    login(email: String!, password: String!): Auth
+    addUser(username: String!, email: String!, password: String!): Auth
+    addEntry(journalText: String!): JournalEntry
   }
 
 `;
 
 // export the typeDefs
 module.exports = typeDefs;
-
-
-// # query a single thought, use the `_id` value of a thought that returned from a previous query
-//   journalEntry(_id: "<thought-id-here>") {
-//     _id
-//     username
-//     journalEntryText
-//     createdAt
-   
-//   }
-
 

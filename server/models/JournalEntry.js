@@ -3,7 +3,7 @@ const dateFormat = require('../utils/dateFormat');
 
 const journalEntrySchema = new Schema(
   {
-    jounralText: {
+    journalText: {
       type: String,
       required: 'You need to leave an entry!',
       minlength: 1
