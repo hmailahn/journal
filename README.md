@@ -1,8 +1,6 @@
 # journal
 
 
-![GitHub last commit](https://img.shields.io/github/last-commit/hmailahn/journal) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/hmailahn/journal) ![GitHub watchers](https://img.shields.io/github/watchers/hmailahn/journal?label=Watch&style=social) ![GitHub top language](https://img.shields.io/github/languages/top/hmailahn/journal)
-
 ## Table of Contents:
 
 1. [Description](#Description)
