@@ -13,7 +13,7 @@
 
 ## Description
 
-Welcome to my 
+Project is still underconstruction...
 
 ## Usage
 
@@ -37,7 +37,6 @@ https://github.com/hmailahn/journal
 
 ## Deployed-Project
 
-https://hmailahn.github.io/
 
 ## Contact-Me
 
