@@ -10,3 +10,19 @@ export const QUERY_JOURNALENTRIES = gql`
     }
   }
 `;
+
+export const QUERY_USER = gql`
+  query user($username: String!) {
+    user(username: $username) {
+      _id
+      username
+      email
+      journalEntries {
+        _id
+        journalText
+        createdAt
+  
+      }
+    }
+  }
+`;
