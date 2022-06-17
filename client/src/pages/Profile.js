@@ -6,6 +6,8 @@ import JournalEntryList from '../components/JournalEntryList';
 import { useQuery } from '@apollo/client';
 import { QUERY_USER } from '../utils/queries';
 
+
+
 const Profile = () => {
   const { username: userParam } = useParams();
 

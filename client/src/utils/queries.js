@@ -26,3 +26,14 @@ export const QUERY_USER = gql`
     }
   }
 `;
+
+export const QUERY_JOURNALENTRY = gql`
+  query journalEntry($id: ID!) {
+    journalEntry(_id: $id) {
+      _id
+      journalText
+      createdAt
+      username
+    }
+  }
+`;
